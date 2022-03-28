@@ -5,7 +5,7 @@
 <h1 align="center">Reveal <sup>VS Code</sup></h1>
 
 <p align="center">
-<a href="https://marketplace.visualstudio.com/items?itemName=holazz.vscode-reveal" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/holazz.vscode-reveal.svg?color=ff5252&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=holazz.vsc-reveal" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/holazz.vsc-reveal.svg?color=ff5252&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
 </p>
 
 <p align="center">
