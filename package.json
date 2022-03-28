@@ -44,7 +44,7 @@
         "icon": {
           "dark": "./res/reveal-dark.svg",
           "light": "./res/reveal-light.svg"
-      }
+        }
       }
     ],
     "keybindings": [
