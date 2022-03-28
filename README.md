@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/holazz/starter-vscode/main/res/icon.png" height="150">
+<img src="https://raw.githubusercontent.com/holazz/vscode-reveal/main/res/icon.png" height="150">
 </p>
 
 <h1 align="center">My Extension <sup>VS Code</sup></h1>
