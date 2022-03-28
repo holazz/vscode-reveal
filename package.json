@@ -1,20 +1,25 @@
 {
-  "name": "name",
-  "displayName": "My Extension",
+  "name": "reveal",
+  "displayName": "Reveal",
   "version": "0.0.0",
   "publisher": "holazz",
   "packageManager": "pnpm@6.32.3",
-  "description": "",
-  "keywords": [],
-  "homepage": "https://github.com/holazz/[name]#readme",
+  "description": "Select opened file at explorer",
+  "keywords": [
+    "reveal",
+    "file",
+    "explorer",
+    "sidebar"
+  ],
+  "homepage": "https://github.com/holazz/vscode-reveal#readme",
   "bugs": {
-    "url": "https://github.com/holazz/[name]/issues"
+    "url": "https://github.com/holazz/vscode-reveal/issues"
   },
   "license": "MIT",
   "author": "zz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/holazz/[name]"
+    "url": "https://github.com/holazz/vscode-reveal"
   },
   "main": "./dist/index.js",
   "files": [
@@ -28,9 +33,38 @@
     "Other"
   ],
   "activationEvents": [
-    "*"
+    "onCommand:reveal.active"
   ],
   "icon": "res/icon.png",
+  "contributes": {
+    "commands": [
+      {
+        "command": "reveal.active",
+        "title": "%reveal.title%",
+        "icon": {
+          "dark": "./res/reveal-dark.svg",
+          "light": "./res/reveal-light.svg"
+      }
+      }
+    ],
+    "keybindings": [
+      {
+        "when": "editorIsOpen",
+        "command": "reveal.active",
+        "key": "ctrl+alt+u",
+        "mac": "cmd+alt+u"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "reveal.active",
+          "when": "view == workbench.explorer.fileView && editorIsOpen",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",

@@ -5,7 +5,7 @@
 <h1 align="center">My Extension <sup>VS Code</sup></h1>
 
 <p align="center">
-<a href="https://marketplace.visualstudio.com/items?itemName=holazz.[name]" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/holazz.[name].svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
+<a href="https://marketplace.visualstudio.com/items?itemName=holazz.vscode-reveal" target="__blank"><img src="https://img.shields.io/visual-studio-marketplace/v/holazz.vscode-reveal.svg?color=eee&amp;label=VS%20Code%20Marketplace&logo=visual-studio-code" alt="Visual Studio Marketplace Version" /></a>
 </p>
 
 ## License
