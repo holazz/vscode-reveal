@@ -1,5 +1,14 @@
 src
 node_modules
 test
+screenshots
 .github
 .vscode
+.eslintrc
+.eslintignore
+.gitignore
+.npmrc
+pnpm-lock.yaml
+pnpm-workspace.yaml
+**/tsconfig.json
+**/*.ts
