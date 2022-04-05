@@ -1,7 +1,7 @@
 {
   "name": "vsc-reveal",
   "displayName": "Reveal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "holazz",
   "packageManager": "pnpm@6.32.3",
   "description": "Select opened file at explorer",
