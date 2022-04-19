@@ -67,18 +67,17 @@
   },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
-    "dev": "nr build --watch",
+    "dev": "pnpm build --watch",
     "lint": "eslint .",
-    "vscode:prepublish": "nr build",
+    "vscode:prepublish": "pnpm build",
     "publish": "vsce publish --no-dependencies --allow-star-activation",
     "pack": "vsce package --no-dependencies --allow-star-activation",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "release": "bumpp --commit --push --tag && nr publish"
+    "release": "bumpp --commit --push --tag && pnpm publish"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.18.8",
-    "@antfu/ni": "^0.13.2",
+    "@holazz/eslint-config": "^1.0.1",
     "@types/node": "^17.0.21",
     "@types/vscode": "^1.65.0",
     "bumpp": "^7.1.1",
