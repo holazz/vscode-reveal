@@ -20,6 +20,6 @@ jobs:
           node-version: 16.x
 
       - name: Release
-        run: npx conventional-github-releaser -p angular -v
+        run: npx conventional-github-releaser -p angular
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
