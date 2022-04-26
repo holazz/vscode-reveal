@@ -1,16 +1,14 @@
-name: Release
+name: Regenerate Release
 
 on:
   push:
-    tags:
-      - 'v*'
-
+    branches:
+      - main
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -18,8 +16,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+          registry-url: https://registry.npmjs.org/
 
       - name: Release
-        run: npx conventional-github-releaser -p angular -v
+        run: npx conventional-github-releaser -p angular -r 0
         env:
           CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{secrets.GITHUB_TOKEN}}
